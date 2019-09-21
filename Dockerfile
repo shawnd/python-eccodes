@@ -18,7 +18,7 @@ RUN cd /tmp/build \
     && make \
     && make install \
     && pip install eccodes-python \
-    && apt-get remove -y libhdf5-dev libjpeg-dev libjpeg62-turbo libjpeg62-turbo-dev libopenjp2-7-dev libnetcdf-dev libpng-dev linux-libc-dev zlib1g-dev libc-dev-bin libc6-dev libgomp1 libquadmath0 gcc gfortran wget cmake git \
+    && apt-get remove -y libhdf5-dev libjpeg-dev libjpeg62-turbo-dev libopenjp2-7-dev libnetcdf-dev libpng-dev linux-libc-dev zlib1g-dev libc-dev-bin libc6-dev libgomp1 gcc gfortran wget cmake git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists \
     && cd /root
